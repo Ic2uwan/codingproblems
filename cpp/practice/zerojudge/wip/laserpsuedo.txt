@@ -1,0 +1,72 @@
+vector<mirror> mirrorMap
+struct mirror{
+    x, y,
+    bool state; \\ 0 ='/', 1 = '\' 
+
+    checkLightHit
+}
+struct laser{
+    int direction, x, y
+    
+    void move{
+    switch direction \\ 0 = up, 1 = down, 2 = left, 3 = right 
+    case 0
+        while
+        y += 1
+        checkLightHit(x, y, mirror xy in Map)
+    case 1 
+        while
+        y -= 1
+        checkLightHit(x, y, mirror xy in Map)
+    case 2
+        while
+        x -= 1
+        checkLightHit(x, y, mirror xy in Map)
+    case 3
+        while
+        x += 1
+        checkLightHit(x, y, mirror xy in Map)
+    }
+}
+up    0  1 //direction 0
+down  0 -1 //direction 1
+left -1  0 //direction 2
+right 1  0 //direction 3
+
+
+
+/ up => right, down => left, left => down, right => up 
+\ up => left, down => right, left => up, right => down
+
+enum direction{
+    up      0
+    down    1
+    left    2
+    right   3
+}
+main
+    int count
+    move laser according to direction
+    if hit mirror
+        call hit(laser direction)
+        hit: change direction, count++
+        if mirrorState = 1
+            switch direction
+            case up
+                direction = right
+            case down
+                direction = left
+            case left
+                direction = down
+            case right 
+                direction = up
+        else
+            switch direction
+            case up
+                direction = left
+            case down
+                direction = right
+            case left
+                direction = up
+            case right 
+                direction = down

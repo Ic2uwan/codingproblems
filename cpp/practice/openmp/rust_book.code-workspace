@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../../../rust/practice/rust_book"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../python"
+		},
+		{
+			"path": "../../../../notes"
+		},
+		{
+			"path": "../../../c"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"array": "cpp"
+		}
+	}
+}

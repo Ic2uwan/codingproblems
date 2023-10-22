@@ -1,0 +1,51 @@
+enum{
+    up,
+    down,
+    left,
+    right
+}
+struct mirror{
+    x, y
+    bool state // 0 = /, 1 = \
+}
+main
+    int laser[3]; //x, y, direction
+    int closest
+    
+    switch direction
+    case up
+        for i in mirrorMap
+            if (i.x == laser[0]) and (i.y > laser[1])
+                min(closest, i.y - laser[1])
+                get minI
+    
+    case down
+        for i in mirrorMap
+            if (i.x == laser[0]) and (i.y < laser[1])
+                min(closest, laser[1] - i.y)
+                get minI
+
+    case left
+        for i in mirrorMap
+            if (i.y == laser[1]) and (laser[0] > i.x)
+                min(closest, laser[0] - i.x)
+                get minI
+
+    case right
+        for i in mirrorMap
+            if (i.y == laser[1]) and (i.x > laser[0])
+                min(closest, i.x - laser[0])
+                get minI
+
+
+trun(direction, mirrorMap[minI][2]){
+    switch direction
+    case 
+}
+
+
+
+up    0  1 //direction 0
+down  0 -1 //direction 1
+left -1  0 //direction 2
+right 1  0 //direction 3

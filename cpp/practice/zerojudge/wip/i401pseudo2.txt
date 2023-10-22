@@ -1,0 +1,67 @@
+enum{
+    up,
+    down,
+    left,
+    right
+}
+struct mirror{
+    x, y
+    bool state // 0 = /, 1 = \
+}
+//main
+//    x, y, t, minI
+//    bool mirrorFound = true
+//    vector mirrorV<mirror>
+//    push_back mirror -> mirrorV
+//    laser{x, y, direction} //current pos
+//    initial direction = right
+//    
+//    while mirrorFound
+//        mirrorFound = false
+//        switch direction
+//            case up
+//                i iterates through mirrorV
+//                    condition i.x == laser.x, i.y higher than laser.y
+//                        mirrorFound = true
+//
+//                        find the min of distance{
+//                            min(mindist, i.y - laser.y)
+//                            minI = the closest i
+//                        }
+//            case down
+//                i iterates through mirrorV
+//                    condition i.x == laser.x, i.y less than laser.y
+//                        mirrorFound = true
+//
+//                        find the min of distance{
+//                            min(mindist, laser.y - i.y)
+//                            minI = the closest i
+//                        }
+//            case left
+//                i iterates through mirrorV
+//                    condition i.y == laser.y, i.x less than laser.x
+//                        mirrorFound = true
+//
+//                        find the min of distance{
+//                            min(mindist, laser.x - i.x)
+//                            minI = the closest i
+//                        }
+//            case right
+//                i iterates through mirrorV
+//                    condition i.y == laser.y, i.x greater than laser.x
+//                        mirrorFound = true
+//
+//                        find the min of distance{
+//                            min(mindist, laser.x - i.x)
+//                            minI = the closest i
+//                        }
+//        end switch
+//        if mirrorFound{
+//            turn[2][4] = condition of turing
+//            direction = turn[mirrorV[minI].state][direction]
+//            count++
+//        }
+//    end while
+//    print count
+//        
+//
