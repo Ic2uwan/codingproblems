@@ -7,6 +7,7 @@ int main(){
 	int in;
 	cin >> k >> q >> r;
 	vector<string> s(q + 1, string(k, '_')); 
+	
 	cin >> s[0];
 	for(int i = 1; i <= q; i++){
 		for(int j = 0; j < k; j++){

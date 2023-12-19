@@ -2,6 +2,8 @@
 
 
 using namespace std;
+
+
 int main(){
     int n, m, dist;
     int intmp;
