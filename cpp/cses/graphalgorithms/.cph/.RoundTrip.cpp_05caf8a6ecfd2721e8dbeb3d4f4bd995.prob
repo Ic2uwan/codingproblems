@@ -1,0 +1,1 @@
+{"name":"Local: RoundTrip","url":"/home/iansh/code/problems/cpp/cses/graphalgorithms/RoundTrip.cpp","tests":[{"id":1727943310755,"input":"5 6\n1 3\n1 2\n5 3\n1 5\n2 4\n4 5","output":"4\n3 5 1 3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/iansh/code/problems/cpp/cses/graphalgorithms/RoundTrip.cpp","group":"local","local":true}
